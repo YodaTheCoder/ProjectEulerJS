@@ -1,5 +1,6 @@
 class Prime {
     sieve(n) {
+        // https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
         const candidates = Array(n).fill(true);
         candidates[0] = false;
         candidates[1] = false;
