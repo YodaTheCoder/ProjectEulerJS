@@ -12,7 +12,7 @@ class Multiplier {
 
 class Palindrome {
     test(candidate) {
-        const c = candidate.split('');
+        const c = `${candidate}`.split('');
         const r = [...c].reverse();
         return JSON.stringify(c) === JSON.stringify(r);
     }
@@ -24,9 +24,7 @@ class Problem4 {
         const candidates = m.products;
         const s = candidates.sort((a, b) => parseInt(b) - parseInt(a));
         const p = new Palindrome();
-        for (let i = 0, l = s.length; i < l; i++) {
-            if (p.test(`${s[i]}`)) return s[i];
-        }
+        return s.find(p.test);
     }
 }
 
