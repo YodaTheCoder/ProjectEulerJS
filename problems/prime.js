@@ -20,13 +20,30 @@ class Prime {
         return primes;
     }
 
+    // returns the UNIQUE prime factors for the given input
     factors(n) {
-        const primes = this.sieve(parseInt(Math.sqrt(n)) + 1);
+        // JS array limit fails for n/2 for high values of n
+        const limit = n > 1000000 ? parseInt(Math.sqrt(n)) + 1 : parseInt(n / 2) + 1;
+        const primes = this.sieve(limit);
         const factors = [];
         primes.forEach(p => {
             if (parseInt(n / p) * p === n) factors.push(p);
         });
         return factors;
+    }
+
+    // returns the full factors of n, for example 108 === [2, 2, 3, 3, 3]
+    factorise(n) {
+        const uniques = this.factors(n);
+        const full = [];
+        let x = n;
+        uniques.forEach(u => {
+            while (x % u === 0) {
+                full.push(u);
+                x = parseInt(x / u);
+            }
+        });
+        return full;
     }
 }
 
