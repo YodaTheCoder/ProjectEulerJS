@@ -1,4 +1,4 @@
-const { Problem1, Problem2, Problem3, Problem4, Problem5, Problem6 } = require('./problems');
+const { Problem1, Problem2, Problem3, Problem4, Problem5, Problem6, Problem7 } = require('./problems');
 
 const p1 = new Problem1([3, 5]);
 console.log(`The solution to Project Euler problem 1 is ${p1.solve(1000)}`);
@@ -17,3 +17,6 @@ console.log(`The solution to Project Euler problem 5 is ${p5.solve([1, 2, 3, 4, 
 
 const p6 = new Problem6(100);
 console.log(`The solution to Project Euler problem 6 is ${p6.difference}`);
+
+const p7 = new Problem7();
+console.log(`The solution to Project Euler problem 7 is ${p7.solve(10001)}`);

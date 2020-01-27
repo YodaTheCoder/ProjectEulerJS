@@ -1,5 +1,6 @@
 class Prime {
     sieve(n) {
+        const limit = Math.min(n, 10);
         // https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
         const candidates = Array(n).fill(true);
         candidates[0] = false;
@@ -45,6 +46,16 @@ class Prime {
         });
         return full;
     }
+
+    nth(n) {
+        let x = n;
+        let primes = [];
+        while (primes.length < n) {
+            x += n;
+            primes = this.sieve(x)
+        }
+        return primes[n - 1];
+    }
 }
 
 class Problem3 {
@@ -55,7 +66,15 @@ class Problem3 {
     }
 }
 
+class Problem7 {
+    solve(n) {
+        const p = new Prime();
+        return p.nth(n);
+    }
+}
+
 module.exports = {
     Prime,
-    Problem3
+    Problem3,
+    Problem7
 }

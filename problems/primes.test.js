@@ -1,4 +1,4 @@
-const { Prime, Problem3 } = require('./prime');
+const { Prime, Problem3, Problem7 } = require('./prime');
 
 test('the correct SEQUENCE OF PRIMES is generated', () => {
     const p = new Prime();
@@ -9,6 +9,12 @@ test('the correct SEQUENCE OF PRIMES is generated', () => {
         61, 67, 71, 73, 79, 83, 89, 97
     ];
     expect(primes).toEqual(primesUnder100);
+});
+
+test('the correct SEQUENCE OF PRIMES is generated when N IS LARGE', () => {
+    const p = new Prime();
+    const primes = p.sieve(200000);
+    expect(primes.length).toBe(17984);
 });
 
 test('the correct UNIQUE FACTORS of N are returned', () => {
@@ -35,11 +41,21 @@ test('the correct FULL SET OF FACTORS of N are returned', () => {
     factors = p.factorise(24);
     factorsExpected = [2, 2, 2, 3];
     expect(factors).toEqual(factorsExpected);
+});
 
+test('the NTH PRIME is returned', () => {
+    const p = new Prime();
+    let n = p.nth(6);
+    expect(n).toBe(13);
 });
 
 test('Problem3 should return the LARGEST PRIME FACTOR of N', () => {
     const p3 = new Problem3();
     expect(p3.solve(1)).toBe(0);
     expect(p3.solve(13195)).toBe(29);
+});
+
+test('Problem7 should return the nTH PRIME NUMBER', () => {
+    const p7 = new Problem7();
+    expect(p7.solve(6)).toBe(13);
 });
