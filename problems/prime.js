@@ -1,6 +1,5 @@
 class Prime {
     sieve(n) {
-        const limit = Math.min(n, 10);
         // https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
         const candidates = Array(n).fill(true);
         candidates[0] = false;
