@@ -5,6 +5,7 @@ const { Problem4 } = require('./multiplier');
 const { Problem5 } = require('./factors');
 const { Problem6 } = require('./problem6');
 const { Problem8 } = require('./productChain');
+const { Problem9 } = require('./triplet');
 
 module.exports = {
     Problem1,
@@ -14,5 +15,6 @@ module.exports = {
     Problem5,
     Problem6,
     Problem7,
-    Problem8
+    Problem8,
+    Problem9
 }
