@@ -72,8 +72,17 @@ class Problem7 {
     }
 }
 
+class Problem10 {
+    solve(n) {
+        const p = new Prime();
+        const primes = p.sieve(n);
+        return primes.reduce((t, n) => t += n, 0);
+    }
+}
+
 module.exports = {
     Prime,
     Problem3,
-    Problem7
+    Problem7,
+    Problem10
 }

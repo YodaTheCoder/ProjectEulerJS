@@ -1,4 +1,4 @@
-const { Prime, Problem3, Problem7 } = require('./prime');
+const { Prime, Problem3, Problem7, Problem10 } = require('./prime');
 
 test('the correct SEQUENCE OF PRIMES is generated', () => {
     const p = new Prime();
@@ -58,4 +58,9 @@ test('Problem3 should return the LARGEST PRIME FACTOR of N', () => {
 test('Problem7 should return the nTH PRIME NUMBER', () => {
     const p7 = new Problem7();
     expect(p7.solve(6)).toBe(13);
+});
+
+test('Problem10 should return the SUM of the PRIME NUMBERS BELOW N', () => {
+    const p10 = new Problem10();
+    expect(p10.solve(10)).toBe(17);
 });

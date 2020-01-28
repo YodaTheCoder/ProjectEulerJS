@@ -26,3 +26,6 @@ console.log(`The solution to Project Euler problem 8 is ${p8.solve('731671765313
 
 const p9 = new problems.Problem9();
 console.log(`The solution to Project Euler problem 9 is ${JSON.stringify(p9.solve(1000))}`);
+
+const p10 = new problems.Problem10();
+console.log(`The solution to Project Euler problem 10 is ${JSON.stringify(p10.solve(2000000))}`);
