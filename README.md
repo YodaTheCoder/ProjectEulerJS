@@ -70,4 +70,11 @@ Ran all test suites.
 
 ### Problem 2
 
-[fibonacci.js](./problems/fibonacci.js) solves problem 2 by implementing a Fibonacci class which can be initialised with any 2 numbers not just 1 and 2 from the classic Fibonacci sequence.
+[fibonacci.js](./problems/fibonacci.js) solves Problem 2 by implementing a Fibonacci class which can be initialised with any 2 numbers not just 1 and 2 from the classic Fibonacci sequence.
+
+---
+
+### Problem 3
+
+[prime.js](./problems/prime.js) uses the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) to find all the prime numbers less than the given input `n` before checking to see if each of those primes is a factor of `n`.
+
