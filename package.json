@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "acorn": "^7.1.1",
+    "jest": "^24.9.0",
+    "minimist": "^1.2.5"
   }
 }
