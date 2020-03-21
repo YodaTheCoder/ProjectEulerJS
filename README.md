@@ -24,3 +24,50 @@ const p1 = new problems.Problem1([3, 5]);
 console.log(`The solution to Project Euler problem 1 is ${p1.solve(1000)}`);
 ```
 
+## Tests
+
+Tests are written using the [Jest](https://jestjs.io/) framework and coverage is 100%
+
+```bash
+> jest --passWithNoTests --coverage
+
+ PASS  problems/productChain.test.js
+ PASS  problems/factors.test.js
+ PASS  problems/fibonacci.test.js
+ PASS  problems/modder.test.js
+ PASS  problems/multiplier.test.js
+ PASS  problems/primes.test.js
+ PASS  problems/triplet.test.js
+ PASS  problems/problem6.test.js
+-----------------|----------|----------|----------|----------|-------------------|
+File             |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-----------------|----------|----------|----------|----------|-------------------|
+All files        |      100 |      100 |      100 |      100 |                   |
+ factors.js      |      100 |      100 |      100 |      100 |                   |
+ fibonacci.js    |      100 |      100 |      100 |      100 |                   |
+ modder.js       |      100 |      100 |      100 |      100 |                   |
+ multiplier.js   |      100 |      100 |      100 |      100 |                   |
+ prime.js        |      100 |      100 |      100 |      100 |                   |
+ problem6.js     |      100 |      100 |      100 |      100 |                   |
+ productChain.js |      100 |      100 |      100 |      100 |                   |
+ triplet.js      |      100 |      100 |      100 |      100 |                   |
+-----------------|----------|----------|----------|----------|-------------------|
+
+Test Suites: 8 passed, 8 total
+Tests:       26 passed, 26 total
+Snapshots:   0 total
+Time:        3.961s
+Ran all test suites.
+```
+
+---
+
+### Problem 1
+
+[modder.js](./problems/modder.js) contains the class Problem1 which when initialised with the array `[3,5]` and called with `.solve(1000)` returns the solution. `Modder.isModN` returns a curried function `m` which when called with number `n` returns true if `m MOD n` is zero.
+
+---
+
+### Problem 2
+
+[fibonacci.js](./problems/fibonacci.js) solves problem 2 by implementing a Fibonacci class which can be initialised with any 2 numbers not just 1 and 2 from the classic Fibonacci sequence.
