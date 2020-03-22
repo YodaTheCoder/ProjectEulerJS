@@ -78,3 +78,9 @@ Ran all test suites.
 
 [prime.js](./problems/prime.js) uses the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) to find all the prime numbers less than the given input `n` before checking to see if each of those primes is a factor of `n`.
 
+---
+
+### Problem 4
+
+[multiplier.js](./problems/multiplier.js) contains the classes Multiplier and Palindrom. Multiplier returns a set of unique products for the two given input maximums. Palindrome has one method which returns a boolean indicating whether the input string is palindromic.
+
