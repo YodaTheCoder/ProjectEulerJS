@@ -90,3 +90,9 @@ Ran all test suites.
 
 [factors.js](./problems/factors.js) has classes for calculating the highest common factor and lowest commom multiples of two inputs. The HCF class makes use of the Prime class from problem 3 to determine the prime factors of the inputs.
 
+---
+
+### Problem 6
+
+[problem6.js](./problems/problem6.js) requires no helper classes to solve, instead it makes use of the JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object to provide the solution.
+
