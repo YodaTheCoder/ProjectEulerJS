@@ -114,5 +114,9 @@ Ran all test suites.
 
 [triplet.js](./problems/triplet.js) accepts any input N and solves according to the requirements of Problem 9, that a &lt; b &lt; c AND a + b + c = N.
 
+---
 
+### Problem 10
+
+[prime.js](./problems/prime.js) solves Problem 10 without the need to extend the Prime class beyond the sieve, simply adding a reducer to the array returned by the sieve.
 
