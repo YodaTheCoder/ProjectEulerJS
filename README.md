@@ -82,7 +82,7 @@ Ran all test suites.
 
 ### Problem 4
 
-[multiplier.js](./problems/multiplier.js) contains the classes Multiplier and Palindrom. Multiplier returns a set of unique products for the two given input maximums. Palindrome has one method which returns a boolean indicating whether the input string is palindromic.
+[multiplier.js](./problems/multiplier.js) contains the classes Multiplier and Palindrome. Multiplier returns a set of unique products for the two given input maximums. Palindrome has one method which returns a boolean indicating whether the input string is palindromic.
 
 ---
 
