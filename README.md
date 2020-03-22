@@ -108,3 +108,11 @@ Ran all test suites.
 
 [productChain.js](./problems/productChain.js) solves Problem 8 for any given input string and for any given number of consecutive digits required. By splitting the input at 0 (which would result in the product being 0) and returning early when the split part length is less than N, the solution is made more efficient that scanning the whole input sequence.
 
+---
+
+### Problem 9
+
+[triplet.js](./problems/triplet.js) accepts any input N and solves according to the requirements of Problem 9, that a &lt; b &lt; c AND a + b + c = N.
+
+
+
