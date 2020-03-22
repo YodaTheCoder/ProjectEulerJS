@@ -2,7 +2,7 @@
 
 My solutions to the [Project Euler](https://projecteuler.net/about) problems.
 
-In all instances I am trying to make the solution as extensible as possible. For example, problem 1
+In all instances I am trying to make the solution as extensible as possible. For example, Problem 1
 
 ```
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
@@ -88,7 +88,7 @@ Ran all test suites.
 
 ### Problem 5
 
-[factors.js](./problems/factors.js) has classes for calculating the highest common factor and lowest commom multiples of two inputs. The HCF class makes use of the Prime class from problem 3 to determine the prime factors of the inputs.
+[factors.js](./problems/factors.js) has classes for calculating the highest common factor and lowest commom multiples of two inputs. The HCF class makes use of the Prime class from Problem 3 to determine the prime factors of the inputs.
 
 ---
 
@@ -102,4 +102,9 @@ Ran all test suites.
 
 [prime.js](./problems/prime.js) is extended to provider a solution for Problem 7, to find the Nth prime number. By calling the prime sieve repeatedly adding N each time until the resultant set of primes was large enough that it had more than R results. I expect there is a more efficient way of solving this but I was more interested in code reuse than learning some new maths.
 
+---
+
+### Problem 8
+
+[productChain.js](./problems/productChain.js) solves Problem 8 for any given input string and for any given number of consecutive digits required. By splitting the input at 0 (which would result in the product being 0) and returning early when the split part length is less than N, the solution is made more efficient that scanning the whole input sequence.
 
