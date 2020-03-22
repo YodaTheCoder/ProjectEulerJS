@@ -96,3 +96,10 @@ Ran all test suites.
 
 [problem6.js](./problems/problem6.js) requires no helper classes to solve, instead it makes use of the JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object to provide the solution.
 
+---
+
+### Problem 7
+
+[prime.js](./problems/prime.js) is extended to provider a solution for Problem 7, to find the Nth prime number. By calling the prime sieve repeatedly adding N each time until the resultant set of primes was large enough that it had more than R results. I expect there is a more efficient way of solving this but I was more interested in code reuse than learning some new maths.
+
+
