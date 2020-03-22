@@ -84,3 +84,9 @@ Ran all test suites.
 
 [multiplier.js](./problems/multiplier.js) contains the classes Multiplier and Palindrom. Multiplier returns a set of unique products for the two given input maximums. Palindrome has one method which returns a boolean indicating whether the input string is palindromic.
 
+---
+
+### Problem 5
+
+[factors.js](./problems/factors.js) has classes for calculating the highest common factor and lowest commom multiples of two inputs. The HCF class makes use of the Prime class from problem 3 to determine the prime factors of the inputs.
+
